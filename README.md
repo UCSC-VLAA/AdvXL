@@ -9,5 +9,12 @@ The machine learning community has witnessed a drastic change in the training pi
 Empirical results demonstrate that AdvXL establishes new state-of-the-art robust accuracy records under AutoAttack on ImageNet-1K. For example, by training on DataComp-1B dataset, our AdvXL empowers a vanilla ViT-g model to substantially surpass the previous records of $l_{\infty}$-, $l_{2}$-, and $l_{1}$-robust accuracy by margins of **11.4%**, **14.2%** and **12.9%**, respectively. This achievement posits AdvXL as a pioneering approach, charting a new trajectory for the efficient training of robust visual representations at significantly larger scales. 
 
 
+<div align="center">
+  <img src="figures/advxl_scale.png"/>
+</div>
+<div align="center">
+  <img src="figures/advxl_performance.png"/>
+</div>
+
 ## Coming Soon!
 We are preparing the code and models for release. Stay tuned!
