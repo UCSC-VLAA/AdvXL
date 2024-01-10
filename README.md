@@ -16,5 +16,11 @@ Empirical results demonstrate that AdvXL establishes new state-of-the-art robust
   <img src="figures/advxl_performance.png"/>
 </div>
 
+## Acknowledge
+This work is partially supported by a gift from Open Philanthropy. We thank Center for AI Safety, TPU Research Cloud (TRC) program, and Google Cloud Research Credits program for supporting our computing needs.
+
+
 ## Coming Soon!
 We are preparing the code and models for release. Stay tuned!
+
+
