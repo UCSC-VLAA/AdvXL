@@ -10,13 +10,12 @@ Empirical results demonstrate that AdvXL establishes new state-of-the-art robust
 
 
 <div align="center">
-  <img src="figures/advxl_scale.png"/>
+  <img src="figures/advxl_scale.png" width="300" height="300" />
 </div>
 <div align="center">
-  <img src="figures/advxl_performance.png"/>
+  <img src="figures/advxl_performance.png" width="529" height="367" />
 </div>
 
-<<<<<<< HEAD
 ## Installation
 Installation and preparation follow the [TIMM Repo](https://github.com/huggingface/pytorch-image-models).
 Additionally, [RobustBench](https://github.com/RobustBench/robustbench) is needed to evaluate model robustness.
