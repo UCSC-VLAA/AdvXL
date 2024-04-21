@@ -30,7 +30,6 @@ For robustness under AutoAttack, use `eval_autoattack.py`.
 We have also provided some example eval scripts under `scripts/eval`. 
 Put the proper weights under `${output_dir}/${checkpoint}`, and they should be able to readily reproduce the results reported in our paper.
 
-# TODO: upload model to gdrive or huggingface
 ### Model Weights
 <table><tbody>
 <!-- START TABLE -->
