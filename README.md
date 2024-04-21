@@ -1,4 +1,4 @@
-# Revisiting Adversarial Training at Scale
+ # Revisiting Adversarial Training at Scale
 
 This is the official repository for our paper: "Revisiting Adversarial Training at Scale."
 
@@ -16,5 +16,64 @@ Empirical results demonstrate that AdvXL establishes new state-of-the-art robust
   <img src="figures/advxl_performance.png"/>
 </div>
 
-## Coming Soon!
-We are preparing the code and models for release. Stay tuned!
+## Installation
+Installation and preparation follow the [TIMM Repo](https://github.com/huggingface/pytorch-image-models).
+Additionally, [RobustBench](https://github.com/RobustBench/robustbench) is needed to evaluate model robustness.
+We also provide a sample conda environment yml file [here](environment.yml), that we used to reproduce the eval results.
+
+
+## Usage
+### Testing Instructions
+For robustness under PGD attack, use `validate.py`.
+For robustness under AutoAttack, use `eval_autoattack.py`.
+
+We have also provided some example eval scripts under `scripts/eval`. 
+Put the proper weights under `${output_dir}/${checkpoint}`, and they should be able to readily reproduce the results reported in our paper.
+
+# TODO: upload model to gdrive or huggingface
+### Model Weights
+<table><tbody>
+<!-- START TABLE -->
+<!-- TABLE HEADER -->
+<th valign="bottom">Model</th>
+<th valign="bottom">Dataset</th>
+<th valign="bottom">Sample@Resolution</th>
+<th valign="bottom">Adv. Steps</th>
+<th valign="bottom">Clean</th>
+<th valign="bottom">Linf</th>
+<th valign="bottom">L2</th>
+<th valign="bottom">L1</th>
+<th valign="bottom">Weights</th>
+<!-- TABLE BODY -->
+<tr><td align="left">ViT-H/14</td>
+<td align="center">DataComp-1B + ImageNet-1K</td>
+<td align="center">5.12B@84 + 38.4M@224 + 6.4M@336</td>
+<td align="center">2/3</td>
+<td align="center">83.9</td>
+<td align="center">69.8</td>
+<td align="center">69.8</td>
+<td align="center">46.0</td>
+<td align="center"><a href="https://huggingface.co/UCSC-VLAA/AdvXL-ViT-H14/blob/main/advxl_vit_h14.pth">download</td>
+<tr><td align="left">ViT-g/14</td>
+<td align="center">DataComp-1B + ImageNet-1K</td>
+<td align="center">5.12B@84 + 38.4M@224 + 6.4M@336</td>
+<td align="center">2/3</td>
+<td align="center">83.9</td>
+<td align="center">71.0</td>
+<td align="center">70.4</td>
+<td align="center">46.7</td>
+<td align="center"><a href="https://huggingface.co/UCSC-VLAA/AdvXL-ViT-g14/blob/main/advxl_vit_g14.pth">download</td>
+</tbody></table>
+
+
+## License
+This project is under the Apache 2.0 License.
+
+
+## Acknowledgement
+This repo is heavily based on [TIMM](https://github.com/huggingface/pytorch-image-models).
+Many thanks to the awesome works from the open-source community!
+
+This work is partially supported by a gift from Open Philanthropy. 
+We also thank Center for AI Safety, TPU Research  Cloud (TRC) program, and Google Cloud Research Credits program for supporting our computing needs.
+
