@@ -16,6 +16,7 @@ Empirical results demonstrate that AdvXL establishes new state-of-the-art robust
   <img src="figures/advxl_performance.png"/>
 </div>
 
+<<<<<<< HEAD
 ## Installation
 Installation and preparation follow the [TIMM Repo](https://github.com/huggingface/pytorch-image-models).
 Additionally, [RobustBench](https://github.com/RobustBench/robustbench) is needed to evaluate model robustness.
@@ -71,9 +72,9 @@ This project is under the Apache 2.0 License.
 
 
 ## Acknowledgement
-This repo is heavily based on [TIMM](https://github.com/huggingface/pytorch-image-models).
+This repo is based on [TIMM](https://github.com/huggingface/pytorch-image-models) and [AutoAttack](https://github.com/fra31/auto-attack).
 Many thanks to the awesome works from the open-source community!
 
-This work is partially supported by a gift from Open Philanthropy. 
-We also thank Center for AI Safety, TPU Research  Cloud (TRC) program, and Google Cloud Research Credits program for supporting our computing needs.
+This work is partially supported by a gift from Open Philanthropy. We thank Center for AI Safety, TPU Research Cloud (TRC) program, and Google Cloud Research Credits program for supporting our computing needs.
+
 
