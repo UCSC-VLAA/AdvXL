@@ -76,3 +76,13 @@ Many thanks to the awesome works from the open-source community!
 This work is partially supported by a gift from Open Philanthropy. We thank Center for AI Safety, TPU Research Cloud (TRC) program, and Google Cloud Research Credits program for supporting our computing needs.
 
 
+## Citation
+
+```
+@inproceedings{wang2024advxl,
+  title     = {Revisiting Adversarial Training at Scale},
+  author    = {Wang, Zeyu and Li, Xianhang and Zhu, Hongru and Xie, Cihang},
+  booktitle = {CVPR},
+  year      = {2024}
+}
+```
